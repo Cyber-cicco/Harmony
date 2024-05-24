@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="assets/styles/styles.css" rel="stylesheet">
   <link href="assets/styles/background.css" rel="stylesheet">
+  <script src="assets/js/htmx.min.js"></script>
 </head>
 
 <body class="flex flex-col h-full w-full">
@@ -14,10 +15,10 @@
     <nav class="flex items-center justify-between w-full fixed top-0 left-0 h-[55px] bg-black">
       <div class="text-primary px-5">HARMONY PHILADELPHE</div>
       <ul class="flex h-full items-center">
-        <li class="flex items-center px-5 hover-link h-full"><a class="text-primary" href="index.html">ACCUEIL</a></li>
-        <li class="flex items-center px-5 h-full bg-secondary"><a class="text-primary"
+        <li class="flex items-center px-5 hover-link h-full"><a hx-boost="true" class="text-primary" href="index.html">ACCUEIL</a></li>
+        <li class="flex items-center px-5 h-full bg-secondary"><a hx-boost="true" class="text-primary"
             href="graphisme.html">GRAPHISME</a></li>
-        <li class="flex items-center px-5 hover-link h-full"><a class="text-primary" href="illustration.html">ILLUSTRATION</a>
+        <li class="flex items-center px-5 hover-link h-full"><a hx-boost="true" class="text-primary" href="illustration.html">ILLUSTRATION</a>
         </li>
       </ul>
     </nav>
