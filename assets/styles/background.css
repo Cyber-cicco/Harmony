@@ -1,17 +1,58 @@
 .fond-haut {
-    width: 100%;
-    height: 827px;
-    background-size: cover;
-    background-image: url('../images/fond.webp');
+  width: 100%;
+  height: 750px;
+  background-size: cover;
+  background-image: url('../images/fond.webp');
 }
+
 .fond-bas {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-image: url('../images/fond_bas.webp');
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-image: url('../images/fond_bas.webp');
 }
 
 .hover-link:hover {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.18389362580969892) 0%, rgba(141, 35, 112, 1) 100%, rgba(0, 212, 255, 1) 100%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.18389362580969892) 0%, rgba(141, 35, 112, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+.gay-square {
+  height: 100px;
+  background-color: #8D2370;
+  clip-path: polygon(25% 0%, 100% 0%, 95% 100%, 19% 100%);
+}
+
+
+.big-diagonal-left {
+  height: 200px;
+  background-color: #8D2370;
+  clip-path: polygon(0% 0%, 100% 0%, 89% 100%, 0% 100%);
+}
+.small-diagonal-right {
+  height: 200px;
+  background-color: #8D2370;
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.medium-diagonal-left {
+  height: 200px;
+  background-color: #8D2370;
+  clip-path: polygon(0% 0%, 100% 0%, 87% 100%, 0% 100%);
+}
+.medium-diagonal-right {
+  height: 200px;
+  background-color: #8D2370;
+  clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.small-diagonal-left {
+  height: 200px;
+  background-color: #8D2370;
+  clip-path: polygon(0% 0%, 100% 0%, 83% 100%, 0% 100%);
+}
+.big-diagonal-right {
+  height: 200px;
+  background-color: #8D2370;
+  clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
