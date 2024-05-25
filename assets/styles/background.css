@@ -136,6 +136,14 @@
 .i9 {
   background-image: url('../images/illustration/09_dessins_patate.webp');
 }
+.zoomed-illu {
+    background-size: 135%;
+    transition: all 0.4s ease-in-out;
+}
+
+.zoomed-illu:hover {
+    background-size: 140%;
+}
 
 .zoomed {
     background-size: 100%;
