@@ -26,34 +26,40 @@
 
 .big-diagonal-left {
   height: 200px;
-  background-color: #8D2370;
+  background-image: url('../images/graphisme/72h_book_72_dpi.webp');;
+  background-size: cover;
   clip-path: polygon(0% 0%, 100% 0%, 89% 100%, 0% 100%);
 }
 .small-diagonal-right {
   height: 200px;
-  background-color: #8D2370;
+  background-image: url('../images/graphisme/grenier_book.webp');;
+  background-size: cover;
   clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .medium-diagonal-left {
   height: 200px;
-  background-color: #8D2370;
+  background-image: url('../images/graphisme/brisset_book.webp');;
+  background-size: cover;
   clip-path: polygon(0% 0%, 100% 0%, 86.5% 100%, 0% 100%);
 }
 .medium-diagonal-right {
   height: 200px;
-  background-color: #8D2370;
+  background-image: url('../images/graphisme/roc_bihan_book.webp');;
+  background-size: cover;
   clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .small-diagonal-left {
   height: 200px;
-  background-color: #8D2370;
+  background-image: url('../images/graphisme/nomad_book.webp');;
+  background-size: cover;
   clip-path: polygon(0% 0%, 100% 0%, 83% 100%, 0% 100%);
 }
 .big-diagonal-right {
   height: 200px;
-  background-color: #8D2370;
+  background-image: url('../images/graphisme/charleen_book.webp');;
+  background-size: cover;
   clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
