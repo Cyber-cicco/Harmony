@@ -23,17 +23,34 @@
   clip-path: polygon(25% 0%, 100% 0%, 95% 100%, 19% 100%);
 }
 
+.gay-slide-left {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-10%);
+    opacity: 10%;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+
 
 .big-diagonal-left {
   height: 200px;
   background-image: url('../images/graphisme/72h_book_72_dpi.webp');;
   background-size: cover;
+  background-repeat: no-repeat;
   clip-path: polygon(0% 0%, 100% 0%, 89% 100%, 0% 100%);
 }
 .small-diagonal-right {
   height: 200px;
   background-image: url('../images/graphisme/grenier_book.webp');;
   background-size: cover;
+  background-repeat: no-repeat;
   clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
@@ -41,56 +58,83 @@
   height: 200px;
   background-image: url('../images/graphisme/brisset_book.webp');;
   background-size: cover;
+  background-repeat: no-repeat;
   clip-path: polygon(0% 0%, 100% 0%, 86.5% 100%, 0% 100%);
 }
 .medium-diagonal-right {
   height: 200px;
   background-image: url('../images/graphisme/roc_bihan_book.webp');;
   background-size: cover;
+  background-repeat: no-repeat;
   clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .small-diagonal-left {
   height: 200px;
   background-image: url('../images/graphisme/nomad_book.webp');;
-  background-size: cover;
+  background-size:cover;
+  background-repeat: no-repeat;
   clip-path: polygon(0% 0%, 100% 0%, 83% 100%, 0% 100%);
 }
+
 .big-diagonal-right {
   height: 200px;
   background-image: url('../images/graphisme/charleen_book.webp');;
-  background-size: cover;
+  background-size:cover;
+  background-repeat: no-repeat;
   clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .kill-me-left {
-  height: 300px;
+  height: 400px;
   background-color: #8D2370;
+  background-position: center;
   clip-path: polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%);
   transform: translateX(32px) scale(1.3, 1);
   width: 16vw;
 }
-.kill-me-to {
-  height: 300px;
-  background-color: #8D2370;
-  clip-path: polygon(30% 0%, 100% 0%, 70% 100%, 0% 100%);
 
-  width: 24vw;
-}
 .kill-me {
-  height: 300px;
-  background-color: #8D2370;
+  height: 400px;
   transform: translateX(20px) scale(1.3, 1);
+  background-position: center;
   clip-path: polygon(30% 0%, 100% 0%, 70% 100%, 0% 100%);
-
   width: 24vw;
 }
 .kill-me-right {
-  height: 300px;
-  background-color: #8D2370;
+  height: 400px;
+  background-position: center;
   clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%);
   transform: translateX(10px) scale(1.3, 1);
   width: 18vw;
+}
+
+.i1 {
+  background-image: url('../images/illustration/01_dessins_pearl.webp');
+}
+.i2 {
+  background-image: url('../images/illustration/02_cassandre.webp');
+}
+.i3 {
+  background-image: url('../images/illustration/03_opale.webp');
+}
+.i4 {
+  background-image: url('../images/illustration/04_dessins_echo.webp');
+}
+.i5 {
+  background-image: url('../images/illustration/05_dessins_arthur.webp');
+}
+.i6 {
+  background-image: url('../images/illustration/06_dessins_filme_ta_formation.webp');
+}
+.i7 {
+  background-image: url('../images/illustration/07_dessins_feminisme.webp');
+}
+.i8 {
+  background-image: url('../images/illustration/08_dessins_sorciere.webp');
+}
+.i9 {
+  background-image: url('../images/illustration/09_dessins_patate.webp');
 }
 
 .zoomed {
