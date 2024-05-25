@@ -87,8 +87,8 @@
 
 .kill-me-left {
   height: 330px;
-  background-color: #8D2370;
   background-position: center;
+  background-repeat: no-repeat;
   clip-path: polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%);
   transform: translateX(32px) scale(1.3, 1);
   width: 16vw;
@@ -98,12 +98,14 @@
   height: 330px;
   transform: translateX(20px) scale(1.3, 1);
   background-position: center;
+  background-repeat: no-repeat;
   clip-path: polygon(30% 0%, 100% 0%, 70% 100%, 0% 100%);
   width: 24vw;
 }
 .kill-me-right {
   height: 330px;
   background-position: center;
+  background-repeat: no-repeat;
   clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%);
   transform: translateX(10px) scale(1.3, 1);
   width: 18vw;
@@ -136,6 +138,14 @@
 .i9 {
   background-image: url('../images/illustration/09_dessins_patate.webp');
 }
+.zoomed-illu-left {
+    background-size: 210%;
+    transition: all 0.4s ease-in-out;
+}
+
+.zoomed-illu-left:hover {
+    background-size: 220%;
+}
 .zoomed-illu-side {
     background-size: 190%;
     transition: all 0.4s ease-in-out;
@@ -144,6 +154,7 @@
 .zoomed-illu-side:hover {
     background-size: 195%;
 }
+
 .zoomed-illu {
     background-size: 140%;
     transition: all 0.4s ease-in-out;
