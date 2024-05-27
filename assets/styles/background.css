@@ -32,6 +32,7 @@
     transform: translateX(-10%);
     opacity: 10%;
   }
+
   100% {
     transform: translateX(0);
     opacity: 100%;
@@ -41,14 +42,17 @@
 
 .big-diagonal-left {
   height: 200px;
-  background-image: url('../images/graphisme/72h_book_72_dpi.webp');;
+  background-image: url('../images/graphisme/72h_book_72_dpi.webp');
+  ;
   background-size: cover;
   background-repeat: no-repeat;
   clip-path: polygon(0% 0%, 100% 0%, 89% 100%, 0% 100%);
 }
+
 .small-diagonal-right {
   height: 200px;
-  background-image: url('../images/graphisme/grenier_book.webp');;
+  background-image: url('../images/graphisme/grenier_book.webp');
+  ;
   background-size: cover;
   background-repeat: no-repeat;
   clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -56,14 +60,17 @@
 
 .medium-diagonal-left {
   height: 200px;
-  background-image: url('../images/graphisme/brisset_book.webp');;
+  background-image: url('../images/graphisme/brisset_book.webp');
+  ;
   background-size: cover;
   background-repeat: no-repeat;
   clip-path: polygon(0% 0%, 100% 0%, 86.5% 100%, 0% 100%);
 }
+
 .medium-diagonal-right {
   height: 200px;
-  background-image: url('../images/graphisme/roc_bihan_book.webp');;
+  background-image: url('../images/graphisme/roc_bihan_book.webp');
+  ;
   background-size: cover;
   background-repeat: no-repeat;
   clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -71,16 +78,18 @@
 
 .small-diagonal-left {
   height: 200px;
-  background-image: url('../images/graphisme/nomad_book.webp');;
-  background-size:cover;
+  background-image: url('../images/graphisme/nomad_book.webp');
+  ;
+  background-size: cover;
   background-repeat: no-repeat;
   clip-path: polygon(0% 0%, 100% 0%, 83% 100%, 0% 100%);
 }
 
 .big-diagonal-right {
   height: 200px;
-  background-image: url('../images/graphisme/charleen_book.webp');;
-  background-size:cover;
+  background-image: url('../images/graphisme/charleen_book.webp');
+  ;
+  background-size: cover;
   background-repeat: no-repeat;
   clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
@@ -102,6 +111,7 @@
   clip-path: polygon(30% 0%, 100% 0%, 70% 100%, 0% 100%);
   width: 24vw;
 }
+
 .kill-me-right {
   height: 330px;
   background-position: center;
@@ -114,61 +124,75 @@
 .i1 {
   background-image: url('../images/illustration/01_dessins_pearl.webp');
 }
+
 .i2 {
   background-image: url('../images/illustration/02_cassandre.webp');
 }
+
 .i3 {
   background-image: url('../images/illustration/03_opale.webp');
 }
+
 .i4 {
   background-image: url('../images/illustration/04_dessins_echo.webp');
 }
+
 .i5 {
   background-image: url('../images/illustration/05_dessins_arthur.webp');
 }
+
 .i6 {
   background-image: url('../images/illustration/06_dessins_filme_ta_formation.webp');
 }
+
 .i7 {
   background-image: url('../images/illustration/07_dessins_feminisme.webp');
 }
+
 .i8 {
   background-image: url('../images/illustration/08_dessins_sorciere.webp');
 }
+
 .i9 {
   background-image: url('../images/illustration/09_dessins_patate.webp');
 }
+
 .zoomed-illu-left {
-    background-size: 210%;
-    transition: all 0.4s ease-in-out;
+  background-size: 210%;
+  transition: all 0.4s ease-in-out;
 }
 
 .zoomed-illu-left:hover {
-    background-size: 220%;
+  background-size: 220%;
 }
+
 .zoomed-illu-side {
-    background-size: 190%;
-    transition: all 0.4s ease-in-out;
+  background-size: 190%;
+  transition: all 0.4s ease-in-out;
 }
 
 .zoomed-illu-side:hover {
-    background-size: 195%;
+  background-size: 195%;
 }
 
 .zoomed-illu {
-    background-size: 140%;
-    transition: all 0.4s ease-in-out;
+  background-size: 140%;
+  transition: all 0.4s ease-in-out;
 }
 
 .zoomed-illu:hover {
-    background-size: 145%;
+  background-size: 145%;
 }
 
 .zoomed {
-    background-size: 100%;
-    transition: all 0.4s ease-in-out;
+  background-size: 100%;
+  transition: all 0.4s ease-in-out;
 }
 
 .zoomed:hover {
-    background-size: 105%;
+  background-size: 105%;
+}
+
+.bg-brisset {
+  background-image: url('../images/graphisme/presentation_brisset.webp');
 }

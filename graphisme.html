@@ -44,7 +44,7 @@
         <div class="zoomed hover:cursor-pointer hover:brightness-125 small-diagonal-right w-[42%]"></div>
       </div>
       <div class="flex w-full py-5">
-        <div class="zoomed hover:cursor-pointer hover:brightness-125 medium-diagonal-left w-1/2"></div>
+        <div data-modal="graphisme/brisset" class="zoomed hover:cursor-pointer hover:brightness-125 medium-diagonal-left w-1/2"></div>
         <div class="zoomed hover:cursor-pointer hover:brightness-125 medium-diagonal-right w-1/2"></div>
       </div>
       <div class="flex w-full py-5">
@@ -56,6 +56,9 @@
     <div class="h-[38px] bg-primary w-full"></div>
     <div class="fond-bas"></div>
   </main>
+  <div id="modal" hidden="true" class="w-4/5 h-4/5">
+  </div>
+  <script src="assets/js/modal.js"></script>
   <script src="assets/js/animations.js"></script>
   <script>doAnimation()</script>
 </body>
