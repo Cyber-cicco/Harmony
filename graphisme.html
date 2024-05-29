@@ -40,16 +40,16 @@
         </div>
       </div>
       <div class="flex w-full py-5 overflow-x-hidden">
-        <div class="zoomed hover:cursor-pointer hover:brightness-125 big-diagonal-left w-[58%]"></div>
-        <div class="zoomed hover:cursor-pointer hover:brightness-125 small-diagonal-right w-[42%]"></div>
+        <div data-modal="graphisme/presentation_grenier_1" class="zoomed hover:cursor-pointer hover:brightness-125 big-diagonal-left w-[58%]"></div>
+        <div data-modal="graphisme/presentation_grenier_1" class="zoomed hover:cursor-pointer hover:brightness-125 small-diagonal-right w-[42%]"></div>
       </div>
       <div class="flex w-full py-5">
-        <div data-modal="graphisme/brisset" class="zoomed hover:cursor-pointer hover:brightness-125 medium-diagonal-left w-1/2"></div>
-        <div class="zoomed hover:cursor-pointer hover:brightness-125 medium-diagonal-right w-1/2"></div>
+        <div data-modal="graphisme/presentation_charleen" class="zoomed hover:cursor-pointer hover:brightness-125 medium-diagonal-left w-1/2"></div>
+        <div data-modal="graphisme/presentation_roc_bihan" class="zoomed hover:cursor-pointer hover:brightness-125 medium-diagonal-right w-1/2"></div>
       </div>
       <div class="flex w-full py-5">
-        <div class="zoomed hover:cursor-pointer hover:brightness-125 small-diagonal-left grow"></div>
-        <div class="zoomed hover:cursor-pointer hover:brightness-125 big-diagonal-right w-[58%]"></div>
+        <div data-modal="graphisme/presentation_charleen" class="zoomed hover:cursor-pointer hover:brightness-125 small-diagonal-left grow"></div>
+        <div data-modal="graphisme/presentation_charleen" class="zoomed hover:cursor-pointer hover:brightness-125 big-diagonal-right w-[58%]"></div>
       </div>
       <div class="pt-5"></div>
     </section>
@@ -57,13 +57,27 @@
     <div class="fond-bas"></div>
   </main>
   <div hidden="true" id="modal-bg" class="fixed z-50 top-0 left-0 w-full h-full bg-black bg-opacity-50 blur"></div>
-  <div hidden id="modal" class="fixed z-50 top-0 left-0 w-full h-full">
+  <div hidden id="modal" class="fixed z-50 top-0 left-0">
     <div class="flex justify-center items-center w-full h-full">
-    </div>
+      <section class="flex w-full">
+        <div class="fixed top-1 right-1 rounded-lg hover:cursor-pointer bg-opacity-40 bg-white w-fit justify-end h-fit"
+          onclick="closeModal()">
+          <svg fill="#000000" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1792 1792" xml:space="preserve">
+            <path
+            d="M1082.2,896.6l410.2-410c51.5-51.5,51.5-134.6,0-186.1s-134.6-51.5-186.1,0l-410.2,410L486,300.4
+            c-51.5-51.5-134.6-51.5-186.1,0s-51.5,134.6,0,186.1l410.2,410l-410.2,410c-51.5,51.5-51.5,134.6,0,186.1
+            c51.6,51.5,135,51.5,186.1,0l410.2-410l410.2,410c51.5,51.5,134.6,51.5,186.1,0c51.1-51.5,51.1-134.6-0.5-186.2L1082.2,896.6z" />
+          </svg>
+        </div>
+        <img id="modal-content" src="../../assetscharleen/images/graphisme/blank.png">
+      </section>
+    </div
   </div>
   <script src="assets/js/modal.js"></script>
   <script src="assets/js/animations.js"></script>
   <script>doAnimation()</script>
+  <script>initModal()</script>
 </body>
 
 </html>
