@@ -4,7 +4,7 @@ let modalBg = document.querySelector('#modal-bg');
 
 triggers.forEach(m => {
   m.addEventListener("click", (e) => {
-    toggleModal(m.getAttribute('[data-modal]'))
+    toggleModal(m.getAttribute('data-modal'))
   });
   m.addEventListener("keydown", (e) => {
     if (e.key === "Enter") toggleModal(m.getAttribute('[data-modal]'));

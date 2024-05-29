@@ -95,17 +95,17 @@
 }
 
 .kill-me-left {
-  height: 330px;
+  height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   clip-path: polygon(0% 0%, 100% 0%, 55% 100%, 0% 100%);
-  transform: translateX(32px) scale(1.3, 1);
+  transform: translateX(32px) scale(1.3, 1.3);;
   width: 16vw;
 }
 
 .kill-me {
-  height: 330px;
-  transform: translateX(20px) scale(1.3, 1);
+  height: 300px;
+  transform: translateX(20px) scale(1.3, 1.3);
   background-position: center;
   background-repeat: no-repeat;
   clip-path: polygon(30% 0%, 100% 0%, 70% 100%, 0% 100%);
@@ -113,11 +113,11 @@
 }
 
 .kill-me-right {
-  height: 330px;
+  height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%);
-  transform: translateX(10px) scale(1.3, 1);
+  transform: translateX(10px) scale(1.3, 1.3);
   width: 18vw;
 }
 
@@ -195,4 +195,8 @@
 
 .bg-brisset {
   background-image: url('../images/graphisme/presentation_brisset.webp');
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
