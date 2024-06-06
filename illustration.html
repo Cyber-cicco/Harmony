@@ -27,7 +27,6 @@
     </nav>
     <div class="fond-haut-illustration"></div>
     <div class="h-[38px] bg-primary w-full"></div>
-    <img style="z-index: 41;" class="absolute left-[10px] top-[350px] scale-x-[-1]" width="519" src="assets/images/fusee.webp">
     <section class="flex flex-col bg-black w-full py-2">
       <div class="grow"></div>
       <div class="flex w-full">
@@ -39,15 +38,15 @@
         </div>
       </div>
       <div class="flex py-10 flex-nowrap">
-        <div class="i1 zoomed-illu-left hover:brightness-125 hover:cursor-pointer kill-me-left"></div>
-        <div class="i2 zoomed-illu hover:brightness-125 hover:cursor-pointer kill-me"></div>
-        <div class="i3 zoomed-illu hover:brightness-125 hover:cursor-pointer kill-me"></div>
-        <div class="i4 zoomed-illu hover:brightness-125 hover:cursor-pointer kill-me"></div>
-        <div class="i5 zoomed-illu hover:brightness-125 hover:cursor-pointer kill-me"></div>
-        <div class="i6 zoomed-illu hover:brightness-125 hover:cursor-pointer kill-me"></div>
-        <div class="i7 zoomed-illu hover:brightness-125 hover:cursor-pointer kill-me"></div>
-        <div class="i8 zoomed-illu hover:brightness-125 hover:cursor-pointer kill-me"></div>
-        <div class="i9 zoomed-illu-side hover:brightness-125 hover:cursor-pointer kill-me-right"></div>
+        <div data-modal="illustration/01_pearl" class="i1 zoomed-illu-left hover:brightness-125 hover:cursor-pointer kill-me-left"></div>
+        <div data-modal="illustration/02_cassandre" class="i2 zoomed-illu hover:brightness-125 hover:cursor-pointer kill-me"></div>
+        <div data-modal="illustration/03_opale" class="i3 zoomed-illu hover:brightness-125 hover:cursor-pointer kill-me"></div>
+        <div data-modal="illustration/04_echo" class="i4 zoomed-illu hover:brightness-125 hover:cursor-pointer kill-me"></div>
+        <div data-modal="illustration/05_arthur" class="i5 zoomed-illu hover:brightness-125 hover:cursor-pointer kill-me"></div>
+        <div data-modal="illustration/06_films_ta_formation" class="i6 zoomed-illu hover:brightness-125 hover:cursor-pointer kill-me"></div>
+        <div data-modal="illustration/07_feminisme" class="i7 zoomed-illu hover:brightness-125 hover:cursor-pointer kill-me"></div>
+        <div data-modal="illustration/08_sorciere" class="i8 zoomed-illu hover:brightness-125 hover:cursor-pointer kill-me"></div>
+        <div data-modal="illustration/09_burnout" class="i9 zoomed-illu-side hover:brightness-125 hover:cursor-pointer kill-me-right"></div>
       </div>
       <div class="w-1/2 py-2">
         <div class="p-9">
@@ -59,11 +58,31 @@
     </section>
     <div class="h-[38px] bg-primary w-full"></div>
     <div class="fond-bas"></div>
-    <div hidden="true" id="modal-bg" class="bg-black bg-opacity-20"></div>
-    <div id="modal" hidden="true" class="fixed top-0 left-0 w-full h-full">
+    <div hidden="true" id="modal-bg" class="fixed z-50 top-0 left-0 w-full h-full bg-black bg-opacity-50 blur"></div>
+    <div hidden id="modal" class="fixed h-full z-50 left-0">
+      <div class="flex justify-between items-center w-full h-full">
+        <section class="">
+          <div hidden="true" id="cbtn-left" data-carousel-control="true" class="fixed top-[50%] left-0 bg-secondary left-chevron hover:bg-primary hover:cursor-pointer"></div>
+          <div hidden="true" id="cbtn-right" data-carousel-control="true" class="fixed top-[50%] right-0 bg-secondary right-chevron hover:bg-primary hover:cursor-pointer"></div>
+        <div style="z-index: 100;" class="fixed top-1 right-1 rounded-lg hover:cursor-pointer bg-opacity-40 bg-white w-fit justify-end h-fit"
+            onclick="closeModal()">
+            <svg fill="#000000" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1792 1792" xml:space="preserve">
+              <path
+              d="M1082.2,896.6l410.2-410c51.5-51.5,51.5-134.6,0-186.1s-134.6-51.5-186.1,0l-410.2,410L486,300.4
+              c-51.5-51.5-134.6-51.5-186.1,0s-51.5,134.6,0,186.1l410.2,410l-410.2,410c-51.5,51.5-51.5,134.6,0,186.1
+              c51.6,51.5,135,51.5,186.1,0l410.2-410l410.2,410c51.5,51.5,134.6,51.5,186.1,0c51.1-51.5,51.1-134.6-0.5-186.2L1082.2,896.6z" />
+            </svg>
+          </div>
+          <div data-carousel="true" id="modal-content" class="flex w-full overflow-x-hidden">
+            <img data-celement="true" src="../../assets/images/graphisme/blank.png">
+          </div>
+        </section>
+      </div
     </div>
     <script src="assets/js/animations.js"></script>
     <script src="assets/js/modal.js"></script>
+    <script src="assets/js/carousel.js"></script>
     <script>doAnimation()</script>
     <script>initModal()</script>
   </main>

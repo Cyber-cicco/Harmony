@@ -167,7 +167,7 @@
 }
 
 .i9 {
-  background-image: url('../images/illustration/09_dessins_patate.webp');
+  background-image: url('../images/illustration/miniature_motion.png');
 }
 
 .zoomed-illu-left {
@@ -226,4 +226,25 @@
 
 .modal {
   animation: 0.3s ease-out 0s 1 openModal;
+}
+
+.left-chevron {
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  width: 90px;
+  height: 100px;
+  z-index: 200;
+}
+
+.right-chevron {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  width: 90px;
+  height: 100px;
+  z-index: 200;
+}
+
+.burnout {
+  background-image: url('../images/illustration/sorciere_dessin_personnage.png');
+  background-size: 30%;
+  height: 100%;
+  background-repeat: no-repeat;
 }

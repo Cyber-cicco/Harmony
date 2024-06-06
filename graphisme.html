@@ -12,7 +12,7 @@
   <script src="assets/js/htmx.min.js"></script>
 </head>
 
-<body class="flex flex-col h-full w-full">
+<body class="flex overflow-x-hidden flex-col h-full w-full">
   <main class="flex flex-col w-full h-full">
     <nav class="flex items-center justify-between w-full fixed top-0 left-0 h-[55px] bg-black z-50">
       <div class="text-primary px-5">HARMONY PHILADELPHE</div>
@@ -28,17 +28,8 @@
     </nav>
     <div class="fond-haut-graphisme"></div>
     <div class="h-[38px] bg-primary w-full"></div>
-    <img class="absolute left-[10px] top-[300px] z-20" width="519" src="assets/images/alien.webp">
     <section class="flex flex-col bg-black w-full py-2">
 
-      <div class="flex w-full">
-        <div class="w-1/2 py-2"></div>
-        <div class="flex flex-col w-1/2">
-          <div class="p-9">
-            <div class="gay-square"></div>
-          </div>
-        </div>
-      </div>
       <div class="flex w-full py-5 overflow-x-hidden">
         <div data-modal="graphisme/presentation_grenier_1" class="zoomed hover:cursor-pointer hover:brightness-125 big-diagonal-left w-[58%]"></div>
         <div data-modal="graphisme/presentation_grenier_1" class="zoomed hover:cursor-pointer hover:brightness-125 small-diagonal-right w-[42%]"></div>
@@ -52,15 +43,25 @@
         <div data-modal="graphisme/presentation_charleen" class="zoomed hover:cursor-pointer hover:brightness-125 big-diagonal-right w-[58%]"></div>
       </div>
       <div class="pt-5"></div>
+      <div class="flex w-full">
+        <div class="w-1/2 py-2"></div>
+        <div class="flex flex-col w-1/2">
+          <div class="p-9">
+            <div class="gay-square"></div>
+          </div>
+        </div>
+      </div>
     </section>
     <div class="h-[38px] bg-primary w-full"></div>
     <div class="fond-bas"></div>
   </main>
   <div hidden="true" id="modal-bg" class="fixed z-50 top-0 left-0 w-full h-full bg-black bg-opacity-50 blur"></div>
   <div hidden id="modal" class="fixed h-full z-50 left-0">
-    <div class="flex justify-center items-center w-full h-full">
+    <div class="flex justify-between items-center w-full h-full">
       <section class="">
-        <div class="fixed top-1 right-1 rounded-lg hover:cursor-pointer bg-opacity-40 bg-white w-fit justify-end h-fit"
+        <div id="cbtn-left" data-carousel-control="true" class="fixed top-[50%] left-0 bg-secondary left-chevron hover:bg-primary hover:cursor-pointer"></div>
+        <div id="cbtn-right" data-carousel-control="true" class="fixed top-[50%] right-0 bg-secondary right-chevron hover:bg-primary hover:cursor-pointer"></div>
+        <div style="z-index: 100;" class="fixed top-1 right-1 rounded-lg hover:cursor-pointer bg-opacity-40 bg-white w-fit justify-end h-fit"
           onclick="closeModal()">
           <svg fill="#000000" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1792 1792" xml:space="preserve">
@@ -70,10 +71,13 @@
             c51.6,51.5,135,51.5,186.1,0l410.2-410l410.2,410c51.5,51.5,134.6,51.5,186.1,0c51.1-51.5,51.1-134.6-0.5-186.2L1082.2,896.6z" />
           </svg>
         </div>
-        <img id="modal-content" src="../../assetscharleen/images/graphisme/blank.png">
+        <div data-carousel="true" id="modal-content" class="flex w-full overflow-x-hidden">
+          <img data-celement="true" src="../../assets/images/graphisme/blank.png">
+        </div>
       </section>
     </div
   </div>
+  <script src="assets/js/carousel.js"></script>
   <script src="assets/js/modal.js"></script>
   <script src="assets/js/animations.js"></script>
   <script>doAnimation()</script>
