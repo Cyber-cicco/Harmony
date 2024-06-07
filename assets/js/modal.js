@@ -101,7 +101,8 @@ function toggleModal(modalName, modal, modalBg, modalContents) {
           el.removeAttribute("hidden")
         })
         modal.querySelector("#modal-content").innerHTML = contentOpts.urls.map((url) => {
-          return `<img data-celement="true" class="image" src="assets/images/${url}.png">`
+          return `
+            <img data-celement="true" class="image" src="assets/images/${url}.png">`
         }).join('')
         break;
       case 'page':

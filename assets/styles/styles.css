@@ -669,6 +669,18 @@ video {
   height: 100%;
 }
 
+.h-\[700px\] {
+  height: 700px;
+}
+
+.h-\[288px\] {
+  height: 288px;
+}
+
+.h-\[388px\] {
+  height: 388px;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -775,6 +787,22 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-\[40\%\] {
+  gap: 40%;
+}
+
+.gap-\[20\%\] {
+  gap: 20%;
+}
+
+.gap-\[50\%\] {
+  gap: 50%;
+}
+
+.gap-28 {
+  gap: 7rem;
 }
 
 .overflow-x-hidden {

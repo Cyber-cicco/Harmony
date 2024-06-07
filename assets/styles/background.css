@@ -249,5 +249,6 @@
 }
 
 .image {
-  height: 80%;
+  max-width: 80%;
+  transform: translateX(10vw);
 }

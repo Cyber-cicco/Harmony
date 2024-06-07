@@ -1,3 +1,4 @@
+var baseSpace = 100
 var container = document.querySelector("[data-carousel]");
 var btnLeft = document.querySelector("#cbtn-left");
 var btnRight = document.querySelector("#cbtn-right");
@@ -8,12 +9,12 @@ function resetElements() {
 }
 
 var carouselState = {
-    positionX : 0,
+    positionX : 10,
     index : 0,
 };
 
 function getPosFromIndex(index){
-    return index * -100;
+    return index * - baseSpace + 10;
 }
 
 
@@ -22,27 +23,25 @@ function animateCarousel(carouselState, newCarouselState) {
         el.animate(
             [
                 // étapes/keyframes
-                { transform: `translateX(${carouselState.positionX}%)` },
-                { transform: `translateX(${newCarouselState.positionX}%)` },
+                { transform: `translateX(${carouselState.positionX}vw)` },
+                { transform: `translateX(${newCarouselState.positionX}vw)` },
             ],
             animationOption
         )
     }
 }
-
 var animationOption = { duration: 500, easing: "ease", fill: "forwards" };
 
 function clickRight() {
-    console.log("caca")
     let newCarouselState
-    if (carouselState.positionX - 100 <= -(elements.length * 100)) {
+    if (carouselState.positionX - baseSpace <= -(elements.length * baseSpace )+ 10) {
         newCarouselState = {
             positionX : getPosFromIndex(0),
             index : 0,
         };
     } else {
         newCarouselState = {
-            positionX : carouselState.positionX - 100,
+            positionX : carouselState.positionX - baseSpace,
             index : carouselState.index + 1
         }
     }
@@ -85,14 +84,14 @@ function clickLeft() {
 
     let newCarouselState;
     console.log(carouselState);
-    if (carouselState.positionX === 0) {
+    if (carouselState.positionX === 10) {
         newCarouselState = {
             positionX : getPosFromIndex(elements.length - 1),
             index : elements.length - 1
         };
     } else {
         newCarouselState = {
-            positionX : carouselState.positionX + 100,
+            positionX : carouselState.positionX + baseSpace,
             index : carouselState.index - 1
         }
     }
