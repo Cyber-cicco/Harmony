@@ -12,6 +12,9 @@ function initModal() {
       'graphisme/presentation_grenier_5',
     ]
   }
+  modalContents["graphisme/72h_presentation"] = {
+    type: "image"
+  }
   modalContents["graphisme/presentation_roc_bihan"] = {
     type: "image"
   }
@@ -89,7 +92,7 @@ function toggleModal(modalName, modal, modalBg, modalContents) {
       case 'image':
         modal.querySelector("#modal-content").innerHTML = `
         <div class="flex justify-center h-full w-full">
-          <img width="1500" data-celement="true" class="image" src="assets/images/${modalName}.png">
+          <img width="1350" data-celement="true" class="image" src="assets/images/${modalName}.png">
         </div>
           `
         break;
