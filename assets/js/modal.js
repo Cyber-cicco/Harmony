@@ -18,7 +18,7 @@ function initModal() {
   modalContents["graphisme/presentation_charleen"] = {
     type: "image"
   }
-  modalContents["graphisme/presentation_brisset"] = {
+  modalContents["graphisme/modal_brisset"] = {
     type: "image"
   }
 
@@ -88,7 +88,9 @@ function toggleModal(modalName, modal, modalBg, modalContents) {
     switch (contentOpts.type) {
       case 'image':
         modal.querySelector("#modal-content").innerHTML = `
-          <img data-celement="true" class="min-w-full" src="assets/images/${modalName}.png">
+        <div class="flex justify-center h-full w-full">
+          <img width="1500" data-celement="true" class="image" src="assets/images/${modalName}.png">
+        </div>
           `
         break;
       case 'carousel':
@@ -96,7 +98,7 @@ function toggleModal(modalName, modal, modalBg, modalContents) {
           el.removeAttribute("hidden")
         })
         modal.querySelector("#modal-content").innerHTML = contentOpts.urls.map((url) => {
-          return `<img data-celement="true" class="min-w-full" src="assets/images/${url}.png">`
+          return `<img data-celement="true" class="image" src="assets/images/${url}.png">`
         }).join('')
         break;
       case 'page':
@@ -111,7 +113,7 @@ function toggleModal(modalName, modal, modalBg, modalContents) {
     el.setAttribute("hidden", "true")
   })
   modal.setAttribute("hidden", "true");
-  modal.querySelector("#modal-content").innerHTML = `<img class="w-full" src="assets/images/graphisme/blank.png">`
+  modal.querySelector("#modal-content").innerHTML = `<img class="image" src="assets/images/graphisme/blank.png">`
 }
 
 function closeModal() {
