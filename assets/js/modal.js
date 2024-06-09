@@ -92,7 +92,7 @@ function toggleModal(modalName, modal, modalBg, modalContents) {
       case 'image':
         modal.querySelector("#modal-content").innerHTML = `
         <div class="flex justify-center h-full w-full">
-          <img width="1350" data-celement="true" class="image" src="assets/images/${modalName}.png">
+          <img width="1350" data-celement="true" class="simple-image" src="assets/images/${modalName}.png">
         </div>
           `
         break;
