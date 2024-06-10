@@ -12,6 +12,13 @@ function initModal() {
       'graphisme/presentation_grenier_5',
     ]
   }
+  modalContents["graphisme/presentation_nomad"] = {
+    type: "carousel",
+    urls: [
+      'graphisme/nomad_presentation_1',
+      'graphisme/nomad_presentation_2',
+    ]
+  }
   modalContents["graphisme/72h_presentation"] = {
     type: "image"
   }
