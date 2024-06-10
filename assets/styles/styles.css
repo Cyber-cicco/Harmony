@@ -648,6 +648,10 @@ video {
   height: 100vh;
 }
 
+.h-\[388px\] {
+  height: 388px;
+}
+
 .h-\[38px\] {
   height: 38px;
 }
@@ -667,18 +671,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[700px\] {
-  height: 700px;
-}
-
-.h-\[288px\] {
-  height: 288px;
-}
-
-.h-\[388px\] {
-  height: 388px;
 }
 
 .min-h-full {
@@ -717,6 +709,10 @@ video {
   width: 58%;
 }
 
+.w-\[687px\] {
+  width: 687px;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -724,6 +720,38 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-\[1000px\] {
+  width: 1000px;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[900px\] {
+  width: 900px;
+}
+
+.w-\[700px\] {
+  width: 700px;
+}
+
+.w-\[800px\] {
+  width: 800px;
 }
 
 .min-w-full {
@@ -746,6 +774,21 @@ video {
 
 .-translate-y-9 {
   --tw-translate-y: -2.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[250px\] {
+  --tw-translate-x: -250px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[200px\] {
+  --tw-translate-x: -200px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-\[100px\] {
+  --tw-translate-x: -100px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -789,20 +832,8 @@ video {
   gap: 1.25rem;
 }
 
-.gap-\[40\%\] {
-  gap: 40%;
-}
-
 .gap-\[20\%\] {
   gap: 20%;
-}
-
-.gap-\[50\%\] {
-  gap: 50%;
-}
-
-.gap-28 {
-  gap: 7rem;
 }
 
 .overflow-x-hidden {
